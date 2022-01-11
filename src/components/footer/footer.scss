@@ -1,0 +1,119 @@
+@import "../../constants.scss";
+
+.container-fluid {
+    padding: 0;
+
+    &--footer {
+        background: rgba(232, 222, 186, 0.28);
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding-top: 70px;
+    max-width: $maxWidthScreen;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-device-width: 1200px) {
+        padding-top: 0;
+    }
+
+    &__logo {
+        padding-right: 20px;
+        height: 100%;
+        box-sizing: border-box;
+
+        @media screen and (max-device-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__sectionlists {
+        display: flex;
+
+        @media screen and (max-device-width: 1200px) {
+            display: none;
+        }
+    }
+}
+
+.sectionlist {
+    width: 54%;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+    &__links {
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+
+.contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 0;
+    padding: 40px 0;
+    line-height: 1.5;
+    border-top: 1px solid $borderGrayColor;
+    border-bottom: 1px solid $borderGrayColor;
+
+    @media screen and (max-device-width: 1200px) {
+        margin: 0;
+    }
+
+    &__item {
+        margin: 0 85px;
+        box-sizing: border-box;
+        width: 14%;
+
+        @media screen and (max-device-width: 1200px) {
+            width: 50%;
+        }
+
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            text-align: center;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $whiteColor;
+    height: 100px;
+    align-items: center;
+
+    @media screen and (max-device-width: $phoneMaxWidth) {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    :first-child {
+        margin-left: 100px;
+
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            margin: 0;
+        }
+    }
+
+    :last-child {
+        margin-right: 100px;
+
+        @media screen and (max-device-width: $phoneMaxWidth) {
+            margin: 0;
+        }
+    }
+}

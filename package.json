@@ -1,0 +1,29 @@
+{
+  "name": "web-canape-native",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^5.1.2",
+    "bootstrap-icons": "^1.5.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "sass": "^1.44.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --config webpack.config.js",
+    "start": "webpack-dev-server --open"
+  },
+  "author": "Ilya Targaev",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^7.0.0",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
